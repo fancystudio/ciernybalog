@@ -1,0 +1,248 @@
+<?php
+$cggm_map_fields['description'] = array();
+$cggm_map_fields['description']['type'] = 'TEXTAREA';
+$cggm_map_fields['description']['wysiwyg'] = 1;
+$cggm_map_fields['description']['prompt_key'] = 'description';
+
+$cggm_map_fields['default_icon'] = array();
+$cggm_map_fields['default_icon']['type'] = 'ICON';
+$cggm_map_fields['default_icon']['prompt_key'] = 'default_icon';
+$cggm_map_fields['default_icon']['info_key'] = 'info_default_icon';
+$cggm_map_fields['default_icon']['dflt'] = 'dd-end';
+
+$cggm_map_fields['type'] = array();
+$cggm_map_fields['type']['type'] = 'SELECT';
+$cggm_map_fields['type']['options'] = 'map=>map,satellite=>satellite,terrain=>terrain,hybrid=>hybrid';
+$cggm_map_fields['type']['prompt_key'] = 'map_type';
+$cggm_map_fields['type']['info_key'] = 'info_map_type';
+$cggm_map_fields['type']['dflt'] = 'hybrid';
+
+$cggm_map_fields['width'] = array();
+$cggm_map_fields['width']['type'] = 'TEXT';
+$cggm_map_fields['width']['size'] = 4;
+$cggm_map_fields['width']['dflt'] = 400;
+$cggm_map_fields['width']['maxlength'] = 4;
+$cggm_map_fields['width']['prompt_key'] = 'width';
+$cggm_map_fields['width']['info_key'] = 'info_width';
+$cggm_map_fields['width']['convert'] = 'int';
+
+$cggm_map_fields['height'] = array();
+$cggm_map_fields['height']['type'] = 'TEXT';
+$cggm_map_fields['height']['size'] = 4;
+$cggm_map_fields['height']['dflt'] = 400;
+$cggm_map_fields['height']['maxlength'] = 4;
+$cggm_map_fields['height']['prompt_key'] = 'height';
+$cggm_map_fields['height']['info_key'] = 'info_height';
+$cggm_map_fields['height']['convert'] = 'int';
+
+$cggm_map_fields['nav_controls'] = array();
+$cggm_map_fields['nav_controls']['type'] = 'BOOL';
+$cggm_map_fields['nav_controls']['prompt_key'] = 'controls';
+$cggm_map_fields['nav_controls']['info_key'] = 'info_controls';
+$cggm_map_fields['nav_controls']['dflt'] = 1;
+
+$cggm_map_fields['nav_control_option'] = array();
+$cggm_map_fields['nav_control_option']['type'] = 'SELECT';
+$cggm_map_fields['nav_control_option']['options'] = 'ANDROID=>android,DEFAULT=>k:default,SMALL=>k:small,ZOOM_PAN=>zoom_pan';
+$cggm_map_fields['nav_control_option']['prompt_key'] = 'nav_control_opt';
+$cggm_map_fields['nav_control_option']['info_key'] = 'info_nav_control_opt';
+$cggm_map_fields['nav_control_option']['dflt'] = 'DEFAULT';
+
+$cggm_map_fields['scale_controls'] = array();
+$cggm_map_fields['scale_controls']['type'] = 'BOOL';
+$cggm_map_fields['scale_controls']['prompt_key'] = 'scalecontrols';
+$cggm_map_fields['scale_controls']['info_key'] = 'info_scalecontrols';
+$cggm_map_fields['scale_controls']['dflt'] = 0;
+
+$cggm_map_fields['sv_controls'] = array();
+$cggm_map_fields['sv_controls']['type'] = 'BOOL';
+$cggm_map_fields['sv_controls']['prompt_key'] = 'sv_controls';
+$cggm_map_fields['sv_controls']['info_key'] = 'info_sv_controls';
+
+$cggm_map_fields['sv_radius'] = array();
+$cggm_map_fields['sv_radius']['tab'] = 'advanced';
+$cggm_map_fields['sv_radius']['type'] = 'TEXT';
+$cggm_map_fields['sv_radius']['size'] = 4;
+$cggm_map_fields['sv_radius']['dflt'] = 100;
+$cggm_map_fields['sv_radius']['prompt_key'] = 'sv_radius';
+$cggm_map_fields['sv_radius']['info_key'] = 'info_sv_radius';
+
+$cggm_map_fields['type_controls'] = array();
+$cggm_map_fields['type_controls']['type'] = 'BOOL';
+$cggm_map_fields['type_controls']['prompt_key'] = 'type_controls';
+$cggm_map_fields['type_controls']['info_key'] = 'info_type_controls';
+$cggm_map_fields['type_controls']['dflt'] = 1;
+
+$cggm_map_fields['type_control_option'] = array();
+$cggm_map_fields['type_control_option']['type'] = 'SELECT';
+$cggm_map_fields['type_control_option']['options'] = 'DEFAULT=>k:default,DROPDOWN_MENU=>k:dropdown,SMALL=>k:small,HORIZONTAL_BAR=>k:horizontal_bar';
+$cggm_map_fields['type_control_option']['prompt_key'] = 'type_control_opt';
+$cggm_map_fields['type_control_option']['info_key'] = 'info_type_control_opt';
+$cggm_map_fields['type_control_option']['dflt'] = 'DEFAULT';
+
+$cggm_map_fields['sidebar'] = array();
+$cggm_map_fields['sidebar']['type'] = 'BOOL';
+$cggm_map_fields['sidebar']['prompt_key'] = 'sidebar';
+$cggm_map_fields['sidebar']['info_key'] = 'info_sidebar';
+$cggm_map_fields['sidebar']['dflt'] = 0;
+
+$cggm_map_fields['zoom'] = array();
+$cggm_map_fields['zoom']['type'] = 'SELECT';
+$cggm_map_fields['zoom']['options'] = '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17';
+$cggm_map_fields['zoom']['prompt_key'] = 'prompt_zoom';
+$cggm_map_fields['zoom']['info_key'] = 'info_zoom';
+$cggm_map_fields['zoom']['dflt'] = 7;
+
+$cggm_map_fields['info_window'] = array();
+$cggm_map_fields['info_window']['type'] = 'BOOL';
+$cggm_map_fields['info_window']['prompt_key'] = 'prompt_info_window';
+$cggm_map_fields['info_window']['info_key'] = 'info_info_window';
+$cggm_map_fields['info_window']['dflt'] = 1;
+
+$cggm_map_fields['info_trigger'] = array();
+$cggm_map_fields['info_trigger']['type'] = 'SELECT';
+$cggm_map_fields['info_trigger']['options'] = 'none=>k:none,click=>k:click,mouseover=>k:mouseover';
+$cggm_map_fields['info_trigger']['prompt_key'] = 'prompt_info_trigger';
+$cggm_map_fields['info_trigger']['info_key'] = 'info_info_trigger';
+$cggm_map_fields['info_trigger']['dflt'] = 'click';
+
+$cggm_map_fields['infowindow_width'] = array();
+$cggm_map_fields['infowindow_width']['type'] = 'TEXT';
+$cggm_map_fields['infowindow_width']['size'] = 4;
+$cggm_map_fields['infowindow_width']['dflt'] = 250;
+$cggm_map_fields['infowindow_width']['maxlength'] = 4;
+$cggm_map_fields['infowindow_width']['prompt_key'] = 'infowindow_width';
+$cggm_map_fields['infowindow_width']['info_key'] = 'info_infowindow_width';
+$cggm_map_fields['infowindow_width']['convert'] = 'int';
+
+$cggm_map_fields['infowindow_height'] = array();
+$cggm_map_fields['infowindow_height']['type'] = 'TEXT';
+$cggm_map_fields['infowindow_height']['size'] = 4;
+$cggm_map_fields['infowindow_height']['dflt'] = 250;
+$cggm_map_fields['infowindow_height']['maxlength'] = 4;
+$cggm_map_fields['infowindow_height']['prompt_key'] = 'infowindow_height';
+$cggm_map_fields['infowindow_height']['info_key'] = 'info_infowindow_height';
+$cggm_map_fields['infowindow_height']['convert'] = 'int';
+
+$cggm_map_fields['category_panel'] = array();
+$cggm_map_fields['category_panel']['type'] = 'BOOL';
+$cggm_map_fields['category_panel']['prompt_key'] = 'show_category_panel';
+$cggm_map_fields['category_panel']['info_key'] = 'info_category_panel';
+$cggm_map_fields['category_panel']['dflt'] = 0;
+
+$cggm_map_fields['icon_selection'] = array();
+$cggm_map_fields['icon_selection']['type'] = 'SELECT';
+$cggm_map_fields['icon_selection']['options'] = 'use_category=>k:use_category_icon,use_marker=>k:use_marker_icon';
+$cggm_map_fields['icon_selection']['prompt_key'] = 'prompt_icon_selection';
+$cggm_map_fields['icon_selection']['info_key'] = 'info_icon_selection';
+$cggm_map_fields['category_panel']['dflt'] = 'use_marker';
+
+
+$cggm_map_fields['directions'] = array();
+$cggm_map_fields['directions']['type'] = 'BOOL';
+$cggm_map_fields['directions']['prompt_key'] = 'directions';
+$cggm_map_fields['directions']['info_key'] = 'info_directions';
+$cggm_map_fields['directions']['tab'] = 'directions';
+$cggm_map_fields['directions']['dflt'] = 1;
+
+$cggm_map_fields['directions_dest'] = array();
+$cggm_map_fields['directions_dest']['type'] = 'SELECT';
+$cggm_map_fields['directions_dest']['options'] = 'WINDOW=>k:window,PANEL=>k:panel';
+$cggm_map_fields['directions_dest']['prompt_key'] = 'directions_dest';
+$cggm_map_fields['directions_dest']['info_key'] = 'info_directions_dest';
+$cggm_map_fields['directions_dest']['tab'] = 'directions';
+$cggm_map_fields['directions_dest']['dflt'] = 'WINDOW';
+
+$cggm_map_fields['directions_units'] = array();
+$cggm_map_fields['directions_units']['type'] = 'SELECT';
+$cggm_map_fields['directions_units']['options'] = 'METRIC=>k:metric,IMPERIAL=>k:imperial';
+$cggm_map_fields['directions_units']['prompt_key'] = 'directions_units';
+$cggm_map_fields['directions_units']['info_key'] = 'info_directions_units';
+$cggm_map_fields['directions_units']['tab'] = 'directions';
+$cggm_map_fields['directions_units']['dflt'] = 'IMPERIAL';
+
+$cggm_map_fields['sensor'] = array();
+$cggm_map_fields['sensor']['type'] = 'BOOL';
+$cggm_map_fields['sensor']['prompt_key'] = 'prompt_sensor';
+$cggm_map_fields['sensor']['info_key'] = 'info_sensor';
+$cggm_map_fields['sensor']['tab'] = 'advanced';
+$cggm_map_fields['sensor']['dflt'] = 0;
+
+$cggm_map_fields['sensor_center'] = array();
+$cggm_map_fields['sensor_center']['type'] = 'BOOL';
+$cggm_map_fields['sensor_center']['prompt_key'] = 'prompt_sensor_center';
+$cggm_map_fields['sensor_center']['info_key'] = 'info_sensor_center';
+$cggm_map_fields['sensor_center']['tab'] = 'advanced';
+$cggm_map_fields['sensor_center']['dflt'] = 0;
+
+$cggm_map_fields['sensor_marker'] = array();
+$cggm_map_fields['sensor_marker']['type'] = 'BOOL';
+$cggm_map_fields['sensor_marker']['prompt_key'] = 'prompt_sensor_marker';
+$cggm_map_fields['sensor_marker']['info_key'] = 'info_sensor_marker';
+$cggm_map_fields['sensor_marker']['tab'] = 'advanced';
+$cggm_map_fields['sensor_marker']['dflt'] = 0;
+
+$cggm_map_fields['sensor_icon'] = array();
+$cggm_map_fields['sensor_icon']['type'] = 'ICON';
+$cggm_map_fields['sensor_icon']['prompt_key'] = 'prompt_sensor_icon';
+$cggm_map_fields['sensor_icon']['info_key'] = 'info_sensor_icon';
+$cggm_map_fields['sensor_icon']['tab'] = 'advanced';
+$cggm_map_fields['sensor_icon']['dflt'] = 'dd-end-small';
+
+$cggm_map_fields['center_lat'] = array();
+$cggm_map_fields['center_lat']['type'] = 'TEXT';
+$cggm_map_fields['center_lat']['prompt_key'] = 'center_lat';
+$cggm_map_fields['center_lat']['info_key'] = 'info_center_lat';
+$cggm_map_fields['center_lat']['convert'] = 'float';
+$cggm_map_fields['center_lat']['tab'] = 'advanced';
+
+$cggm_map_fields['center_lon'] = array();
+$cggm_map_fields['center_lon']['type'] = 'TEXT';
+$cggm_map_fields['center_lon']['prompt_key'] = 'center_lon';
+$cggm_map_fields['center_lon']['info_key'] = 'info_center_lon';
+$cggm_map_fields['center_lon']['convert'] = 'float';
+$cggm_map_fields['center_lon']['tab'] = 'advanced';
+
+$cggm_map_fields['zoom_encompass'] = array();
+$cggm_map_fields['zoom_encompass']['type'] = 'BOOL';
+$cggm_map_fields['zoom_encompass']['prompt_key'] = 'zoom_encompass';
+$cggm_map_fields['zoom_encompass']['info_key'] = 'info_zoom_encompass';
+$cggm_map_fields['zoom_encompass']['tab'] = 'advanced';
+$cggm_map_fields['zoom_encompass']['dflt'] = 0;
+
+$cggm_map_fields['bounds_fudge'] = array();
+$cggm_map_fields['bounds_fudge']['type'] = 'TEXT';
+$cggm_map_fields['bounds_fudge']['prompt_key'] = 'prompt_bounds_fudge';
+$cggm_map_fields['bounds_fudge']['info_key'] = 'info_bounds_fudge';
+$cggm_map_fields['bounds_fudge']['convert'] = 'float';
+$cggm_map_fields['bounds_fudge']['tab'] = 'advanced';
+
+$cggm_map_fields['combine_points'] = array();
+$cggm_map_fields['combine_points']['type'] = 'BOOL';
+$cggm_map_fields['combine_points']['prompt_key'] = 'combine_points';
+$cggm_map_fields['combine_points']['info_key'] = 'info_combine_points';
+$cggm_map_fields['combine_points']['tab'] = 'advanced';
+$cggm_map_fields['combine_points']['dflt'] = 0;
+
+$cggm_map_fields['point_combine_fudge'] = array();
+$cggm_map_fields['point_combine_fudge']['type'] = 'TEXT';
+$cggm_map_fields['point_combine_fudge']['prompt_key'] = 'point_combine_fudge';
+$cggm_map_fields['point_combine_fudge']['info_key'] = 'info_point_combine_fudge';
+$cggm_map_fields['point_combine_fudge']['convert'] = 'float';
+$cggm_map_fields['point_combine_fudge']['tab'] = 'advanced';
+
+$cggm_map_fields['combined_icon'] = array();
+$cggm_map_fields['combined_icon']['type'] = 'ICON';
+$cggm_map_fields['combined_icon']['prompt_key'] = 'point_combine_icon';
+$cggm_map_fields['combined_icon']['info_key'] = 'info_point_combine_icon';
+$cggm_map_fields['combined_icon']['tab'] = 'advanced';
+$cggm_map_fields['combined_icon']['dflt'] = 'star';
+
+?>
+
+
+
+
+
+
+

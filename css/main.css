@@ -1,0 +1,987 @@
+
+
+/* ==========================================================================
+   fancystudio.sk
+   ========================================================================== */
+
+
+
+@font-face {
+    font-family: 'georgiabold';
+    src: url('../fonts/georgia_bold-webfont.eot');
+    src: url('../fonts/georgia_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/georgia_bold-webfont.woff') format('woff'),
+         url('../fonts/georgia_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'georgiaregular';
+    src: url('../fonts/georgia-webfont.eot');
+    src: url('../fonts/georgia-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/georgia-webfont.woff') format('woff'),
+         url('../fonts/georgia-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+strong {font-family: georgiabold }
+
+html, body{
+	font-family: georgiaregular;
+	height: 100%;
+}
+
+a {
+	color: #9a9283;
+}
+
+h3{
+	font-size: 19px
+}
+
+ul li{
+	margin-top: 10px
+}
+
+a:hover {
+	color: #323232;
+	text-decoration: none
+}
+
+.header{
+	height: 110px;
+}
+
+select.lang {
+	border: 1px solid #9a9283;
+	color: #9a9283;
+	margin-left: 15px;
+	width: 53px;
+}
+
+.logo img{
+	position: relative;
+	z-index: 10;
+}
+
+.nav-pills a{
+	font-size: 1.15em;
+	color: #9a9283
+}
+
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding: 6px 15px;
+}
+
+.navbar-default{
+	background-color: transparent;
+	border: none;
+	top: 50%;
+	margin-top: -25px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+	color: #323232;
+	background: none;
+
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+	text-decoration: none;
+	background: none;
+	color: #323232;
+}
+ 
+.zavrietrezervacia{
+	display: none;
+}
+
+.reservationStatus {
+margin: 50px 22px;
+padding: 20px 0px !important;
+font-size: 20px;
+} 
+ 
+a.rezervacia{
+	display: block;
+	background-color: #9a9283;
+	color: white;
+	margin-left: 16px;
+}
+a.rezervacia:hover{
+	display: block;
+	background-color: #323232 !important;
+	color: white !important
+}
+
+.claim-wrapper{
+	background: url(../img/bg-claim.jpg);
+	background-size: cover;
+	height: 34%;
+	display: table;
+	width: 100%;
+}
+
+.inner-claim{
+	position: relative;
+	font-size: 1.55em;
+}
+
+.inner-claim .vitajte{
+	font-size: 1.8em;
+}
+
+.claim{
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.content-boxes-wrapper{
+	background: url(../img/bg-cb.jpg);
+	background-size: cover;
+	width: 100%;
+	padding: 100px 0;
+	color: #7a6b59;
+}
+
+.content-boxes-wrapper a{
+	color: #7a6b59
+}
+
+.content-boxes-wrapper a:hover{
+	color: #323232
+}
+
+.cb{
+	text-align: center
+}
+
+.cb-img{
+	position: relative;
+	z-index: 12;
+}
+
+
+img.cb-img{
+	-webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;   
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;  
+    overflow:hidden;
+}
+
+img.separator {
+	padding: 28px 0 32px 0;
+}
+
+img.cb-img:hover{
+	-webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.left-decor {
+	position: absolute;
+	left: -67px;
+	top: 50%;
+	margin-top: -20px;
+}
+
+.right-decor {
+	position: absolute;
+	right: -67px;
+	top: 50%;
+	margin-top: -20px;
+}
+
+
+.footer p{
+	text-align: center;
+	color: #7a6b59;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+.footer img{
+	margin-left: 8px
+}
+
+/*
+.modal-dialog{
+	width: 800px
+}
+*/
+
+
+.cennik-modal{
+	text-align: center
+}
+
+/* Half Page Height Carousel Customization */
+.carousel {
+  height: 56%;
+  clear: both
+}
+
+.item,
+.active,
+.carousel-inner {
+	height: 100%;
+}
+
+.fill {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.main-heading-wrapper{
+	width: 100%;
+	background: url(../img/bg-h2.jpg) center center;
+	background-size: cover;
+	clear: both
+}
+
+.content-wrapper{
+	width: 100%;
+	background: url(../img/content-bg.jpg) center center;
+	background-size: cover
+}
+
+.main-heading{
+	text-align: center;
+}
+
+.main-heading h1 {
+	padding: 30px 0 40px 0px;
+}
+
+.content.container{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-size: 14px;
+}
+
+
+
+/* ==========================================================================
+   rezervacia
+   ========================================================================== */
+.specialDate a{ background-color: #d7d1c6 !important; }
+	.menoAPriezviskoClass .error,.adresaClass .error,.telefonClass .error,.emailClass .error,
+	.privacyError,.cislo-ly,.cislo-ly .error,.pocetDetiClass .error,.pocetDospelychClass .error{display:none;}
+
+.alert {
+padding: 7px;
+margin-bottom: 20px;
+border: 1px solid transparent;
+border-radius: 4px;
+text-align: center;
+}
+
+.rezervacia-formular .modal-content{
+	background: #f0ece5;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.rezervacia-formular .modal-title{
+	color: #7a6b59;
+	text-align: center;
+	font-size: 2.15em;
+	padding: 15px 0px;
+}
+
+.rezervacia-formular .modal-header {
+	padding: 15px;
+	border-bottom: 1px solid #7a6b59;
+	min-height: 16.42857143px;
+}
+
+.rezervacia-formular .modal-footer {
+border-top: 0px solid #7a6b59;
+}
+
+.rezervacia-formular label{
+	color: #7a6b59;
+}
+
+.rezervacia-formular .rezervacia-form{
+	margin-top: 20px
+}
+
+.form-control:focus {
+	border-color: #7a6b59;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(122,107,89,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(122,107,89,.6);
+}
+
+.lyoness .btn-group{
+	margin-top: 0px !important
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+	color: white !important;
+	background-color: #7a6b59 !important;
+	border-color: transparent;
+}
+
+.vasa-sprava{
+	margin-top: 20px
+}
+
+.btn-primary {
+	color: white !important;
+	background-color: #9a9283;
+	border-color: transparent;
+	-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+.ch-l{
+	width: 100px
+}
+
+.cislo-ly{
+	margin-top: 10px !important
+}
+
+input.check-privacy{
+	margin-left: 10px
+}
+
+.rezervacia-formular .well{
+	text-align: center;
+	color: #9a9283;
+	font-size: 18px;
+}
+
+.suma{
+	font-size: 26px;
+	margin-left: 15px
+}
+
+.panel-default>.panel-heading+.panel-collapse .panel-body {
+text-align: justify;
+}
+
+.privacy-ag{
+	padding-left: 0px
+}
+
+.error {
+color: #a94442 !important;
+font-size: 12px;
+margin-bottom: 0px;
+font-family: arial;
+}
+
+.panel-default>.panel-heading {
+	color: #9a9283;
+	cursor: pointer
+}
+
+
+
+.rezervacia-formular .panel-title{
+	text-align: left
+}
+
+			.calendar{margin-top:5px;}
+			.ui-datepicker { width: 100%; height: auto; margin: 0px auto 0; }
+			.ui-datepicker a { text-decoration: none; }
+			.ui-datepicker table { width: 100%; }
+			.ui-datepicker-header { background: #202020; color: #ffffff; font-weight: bold; line-height: 30px; padding:15px 0px; text-transform: uppercase; }
+			.ui-datepicker-title { text-align: center; }
+			.ui-datepicker-prev, .ui-datepicker-next { display: inline-block; width: 30px; height: 30px; text-align: center; cursor: pointer; background-image: url('../img/arrow.png'); background-repeat: no-repeat; line-height: 600%; overflow: hidden; }
+			.ui-datepicker-prev { float: left; background-position: center -30px; margin-left:5px; }
+			.ui-datepicker-next { float: right; background-position: center 0px; margin-right:5px; }
+			.ui-datepicker thead { background-color: #f7f7f7; border-bottom: 1px solid #bbb; display: none; }
+			.ui-datepicker th { text-transform: uppercase; font-size: 6pt; padding: 5px 0; color: #666666; text-shadow: 1px 0px 0px #fff; filter: dropshadow(color=#fff, offx=1, offy=0); } 
+			.ui-datepicker tbody td { padding: 0; border-right: 1px solid #eeeeee; }
+			.ui-datepicker tbody td:first-child{ border-left: 1px solid #eeeeee; }
+			.ui-datepicker tbody tr { border-bottom: 1px solid #eeeeee; }
+			.ui-datepicker td span, .ui-datepicker td a { display: inline-block; font-weight: normal; text-align: center; display: block; line-height: 35px; color: #666666; }
+			.ui-datepicker-calendar .ui-state-default { background: #ffffff; }
+			.ui-datepicker-calendar .ui-state-hover { background: #9a9283; color:#fff; margin:0px; }
+			.ui-datepicker-calendar .ui-state-active { background: #9a9283; color: #ffffff; position: relative; margin:0px; }
+			.ui-datepicker-unselectable .ui-state-default { background: #ffffff; color: #cccccc; }
+			
+			
+			
+/* ==========================================================================
+   galeria
+   ========================================================================== */
+
+.galeria{
+	margin-top: -27px
+}
+   
+.galeria img{
+	width: 100%;
+	height: auto;
+	border: 7px solid #c9bdad;
+	box-shadow: 0px 0px 5px #aaa;
+}
+
+.g-image{
+	margin-top: 27px;
+	position: relative;
+	float: left
+}
+
+a.group {
+	position: relative;
+	float: left;
+	margin: 0px;
+}
+
+.mask{
+	position: absolute;
+	top:6px;
+	bottom: 6px;
+	left: 6px;
+	right: 6px;
+	background: url(../img/gallery-mask.png) repeat;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.g-image:hover .mask{
+	opacity: 1;
+	   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+
+.mask img {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border: none;
+	top: 50%;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -25px;
+	box-shadow: none;
+}
+
+/* ==========================================================================
+   kontakt
+   ========================================================================== */
+.kontakt-info{
+	text-align: center
+}
+
+.kontakt-separator {
+	width: 100%;
+	height: 1px;
+	background: #323232;
+	margin: 35px 0;
+	display: block;
+}
+
+#cggm_map_display_1, .pagetable{
+	width: 100% !important
+}
+
+#map{
+	width: 100%;
+	height: 601px;
+}
+
+
+.icon-group{
+	text-align: center
+}
+
+.icon-group img{
+	max-width: 100%;
+	height: auto;
+}
+
+img.ikony {
+	margin-bottom: 85px;
+}
+img.ikony.last {
+	margin-bottom: 0px;
+}
+
+.nav-tabs .col-md-2{
+	padding: 0px
+}
+
+.nav.nav-tabs a{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	padding: 20px 10px;
+}
+
+.nav.nav-tabs{
+	margin-bottom: 5px
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+	color: #555;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #ddd;
+	border-bottom-color: transparent;
+	cursor: default;
+}
+
+img.aktivity-img {
+	margin-right: 10px;
+}
+.tab-content .panel-heading:hover{
+	background-color: rgba(255, 255, 255, 0.5); 
+}
+
+.tab-content .panel-body{
+	background-color: rgba(255, 255, 255, 0.1) !important; 
+}
+
+.tab-content .panel{
+	background-color: rgba(255, 255, 255, 0.1) !important; 
+}
+
+
+
+
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 991px) { 
+
+.container.header{
+	text-align: center
+}	
+
+a.logo{
+	float: none !important
+}
+
+.navbar-default{
+	top: auto;
+	margin-top: auto
+}
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1999px) 
+{ 
+
+.logo {
+width: 250px;
+height: 100%;
+}
+
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+
+
+@media (max-width: 768px) { 
+
+.kontakt-info {
+clear: both;
+margin-top: 100px;
+}
+	
+.navbar-default{
+	width: 100%
+}
+	
+.logo, .logo img {
+width: 201px;
+height: auto;
+position: absolute
+}
+
+.m-lang {
+position: absolute;
+top: 34px;
+right: 70px;
+}
+
+.navbar-toggle{
+	margin-right: 0px
+}
+
+
+div#bs-example-navbar-collapse-1 li {
+width: 100%
+}
+a.rezervacia{
+	float: none;
+	margin: 0px
+}
+
+
+.navbar-default {
+background-color: transparent;
+border: none;
+ top: 0px;
+margin-top: 36px;
+}
+
+.navbar-collapse {
+margin-top: 35px;
+text-align: center;
+}
+
+.navbar-default .navbar-toggle {
+border-color: #9a9283;
+background-color:#9a9283; 
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+background-color: white;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color: #9a9283;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * jquery.selectBoxIt.css 3.8.1
+ * Author: @gregfranko
+ */
+
+/*
+  Common CSS Properties
+  ---------------------
+  These properties will be applied to any themes that you use
+*/
+
+/* SelectBoxIt container */
+.selectboxit-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15px;
+}
+
+/* Styles that apply to all SelectBoxIt elements */
+.selectboxit-container * {
+
+  /* Prevents text selection */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  outline: none;
+  white-space: nowrap;
+}
+
+/* Button */
+.selectboxit-container .selectboxit {
+  width: 220px; /* Width of the dropdown button */
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border-radius: 3px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  
+}
+
+/* Height and Vertical Alignment of Text */
+.selectboxit-container span, .selectboxit-container .selectboxit-options a {
+height: 35px;
+line-height: 35px;
+display: block;
+color: #9a9283;
+}
+
+/* Focus pseudo selector */
+.selectboxit-container .selectboxit:focus {
+  outline: 0;
+}
+
+/* Disabled Mouse Interaction */
+.selectboxit.selectboxit-disabled, .selectboxit-options .selectboxit-disabled {
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  cursor: default;
+}
+
+/* Button Text */
+.selectboxit-text {
+  text-indent: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: left;
+}
+
+.selectboxit .selectboxit-option-icon-container {
+  margin-left: 5px;
+}
+
+/* Options List */
+.selectboxit-container .selectboxit-options {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 100%;  /* Minimum Width of the dropdown list box options */
+  *width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+  cursor: pointer;
+  display: none;
+  z-index: 9999999999999;
+  border-radius: 3px;
+  text-align: left;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* Individual options */
+ .selectboxit-option .selectboxit-option-anchor{
+  padding: 0 2px;
+}
+
+/* Individual Option Hover Action */
+.selectboxit-option .selectboxit-option-anchor:hover {
+  text-decoration: none;
+}
+
+/* Individual Option Optgroup Header */
+.selectboxit-option, .selectboxit-optgroup-header {
+  text-indent: 5px; /* Horizontal Positioning of the select box option text */
+  margin: 0;
+  list-style-type: none;
+}
+
+/* The first Drop Down option */
+.selectboxit-option-first {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+/* The first Drop Down option optgroup */
+.selectboxit-optgroup-header + .selectboxit-option-first {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+/* The last Drop Down option */
+.selectboxit-option-last {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+/* Drop Down optgroup headers */
+.selectboxit-optgroup-header {
+  font-weight: bold;
+}
+
+/* Drop Down optgroup header hover psuedo class */
+.selectboxit-optgroup-header:hover {
+  cursor: default;
+}
+
+/* Drop Down down arrow container */
+.selectboxit-arrow-container {
+  /* Positions the down arrow */
+  width: 30px;
+  position: absolute;
+  right: 0;
+}
+
+/* Drop Down down arrow */
+.selectboxit .selectboxit-arrow-container .selectboxit-arrow {
+  /* Horizontally centers the down arrow */
+  margin: 0 auto;
+  position: absolute;
+  top: 47%;
+  right: 0;
+  left: 0;
+}
+
+/* Drop Down down arrow for jQueryUI and jQuery Mobile */
+.selectboxit .selectboxit-arrow-container .selectboxit-arrow.ui-icon {
+  top: 30%;
+}
+
+/* Drop Down individual option icon positioning */
+.selectboxit-option-icon-container {
+  float: left;
+}
+
+.selectboxit-container .selectboxit-option-icon {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+/* Drop Down individual option icon positioning */
+.selectboxit-option-icon-url {
+  width: 18px;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  float: left;
+}
+
+.selectboxit-rendering {
+  display: inline-block !important;
+  *display: inline !important;
+  zoom: 1 !important;
+  visibility: visible !important;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+/* jQueryUI and jQuery Mobile compatability fix - Feel free to remove this style if you are not using jQuery Mobile */
+.jqueryui .ui-icon {
+  background-color: inherit;
+}
+
+/* Another jQueryUI and jQuery Mobile compatability fix - Feel free to remove this style if you are not using jQuery Mobile */
+.jqueryui .ui-icon-triangle-1-s {
+  background-position: -64px -16px;
+}
+
+/*
+  Default Theme
+  -------------
+  Note: Feel free to remove all of the CSS underneath this line if you are not using the default theme
+*/
+.selectboxit-btn {
+background-color: white;
+border: 1px solid #9a9283;
+
+
+}
+
+.selectboxit-btn.selectboxit-enabled:hover,
+.selectboxit-btn.selectboxit-enabled:focus,
+.selectboxit-btn.selectboxit-enabled:active {
+  color: #9a9283;
+  /* background-color: #e6e6e6; */
+}
+
+.selectboxit-btn.selectboxit-enabled:hover,
+.selectboxit-btn.selectboxit-enabled:focus {
+  color: #9a9283;
+  text-decoration: none;
+  background-position: 0 -15px;
+}
+
+.selectboxit-default-arrow {
+  width: 0;
+  height: 0;
+  border-top: 4px solid #000000;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.selectboxit-list {
+  background-color: white;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.selectboxit-list .selectboxit-option-anchor {
+  color: #333333;
+}
+
+.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor {
+  color: black;
+  /*
+background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+*/
+  background-repeat: repeat-x;
+}
+
+.selectboxit-list > .selectboxit-disabled > .selectboxit-option-anchor {
+  color: #999999;
+}
