@@ -61,7 +61,8 @@ if($status != "error"){
 		    	$res->execute();
 		}
 	}
-	$cisloObjednavky = $help->sendMailToClient(date("j.n.Y", strtotime($_POST["prichod"])), date("j.n.Y", strtotime($_POST["odchod"])), $_POST["dospeli"], $_POST["deti"], $_POST["lyoness"], $_POST["email"]);
+	//$cisloObjednavky = $help->sendMailToClient(date("j.n.Y", strtotime($_POST["prichod"])), date("j.n.Y", strtotime($_POST["odchod"])), $_POST["dospeli"], $_POST["deti"], $_POST["lyoness"], $_POST["email"]);
+	$cisloObjednavky = explode(' ',microtime());
 	$help->sendMailToAdmin($_POST["meno"], $_POST["adresa"], $_POST["number"], $_POST["email"], date("j.n.Y", strtotime($_POST["prichod"])), 
 							date("j.n.Y", strtotime($_POST["odchod"])), $_POST["lyoness"], $_POST["dospeli"], $_POST["deti"], $_POST["poznamka"],$cisloObjednavky);
 	$status = "success";
