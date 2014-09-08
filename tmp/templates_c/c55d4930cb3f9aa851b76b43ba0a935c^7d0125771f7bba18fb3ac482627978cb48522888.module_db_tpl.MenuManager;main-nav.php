@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-09-08 19:00:32
+<?php /* Smarty version Smarty-3.1.16, created on 2014-08-26 00:08:11
          compiled from "module_db_tpl:MenuManager;main-nav" */ ?>
-<?php /*%%SmartyHeaderCode:7446248385367c4be153df4-60294933%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:108248069353fbb3cb9352c0-69978764%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,19 +11,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module_db_tpl',
     ),
   ),
-  'nocache_hash' => '7446248385367c4be153df4-60294933',
+  'nocache_hash' => '108248069353fbb3cb9352c0-69978764',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_5367c4be218101_59445243',
   'variables' => 
   array (
     'lang_parent' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.16',
+  'unifunc' => 'content_53fbb3cba04fe3_02986158',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5367c4be218101_59445243')) {function content_5367c4be218101_59445243($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cms_selflink')) include '/Applications/MAMP/htdocs/ciernybalog/plugins/function.cms_selflink.php';
+<?php if ($_valid && !is_callable('content_53fbb3cba04fe3_02986158')) {function content_53fbb3cba04fe3_02986158($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cms_selflink')) include '/Applications/MAMP/htdocs/ciernybalog/plugins/function.cms_selflink.php';
 ?><div class="navbar navbar-default pull-right" role="navigation">
 
     <!-- Brand and toggle get grouped for better mobile display -->
